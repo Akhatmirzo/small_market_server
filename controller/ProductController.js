@@ -71,6 +71,10 @@ exports.getProducts = async (req, res) => {
 exports.getProduct = async (req, res) => {
   const { id } = req.params;
 
+  if (!id) {
+    return res.status(400).send({error: "id is required"})
+  }
+
   try {
     const product = await Product.findOne({ _id: id }).exec();
 
