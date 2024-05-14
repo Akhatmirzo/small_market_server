@@ -1,0 +1,26 @@
+{
+  "name": "small_marketplace_server",
+  "version": "1.0.0",
+  "description": "G15 Frontend Test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^7.0.0",
+    "@fastify/multipart": "^6.0.0",
+    "@fastify/static": "^5.0.0",
+    "@fastify/swagger": "^6.0.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "fastify": "^3.20.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.1",
+    "node-cron": "^3.0.2",
+    "nodemon": "^3.0.3"
+  },
+  "author": "Akhatmirzo Umarov",
+  "license": "ISC"
+}
