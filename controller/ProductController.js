@@ -56,7 +56,7 @@ exports.getProducts = async (req, res) => {
     const products = await Product.find({ adminId: adminId }).exec();
 
     if (products.length === 0 || !products) {
-      return res.status(200).send({ message: "Products not Found" });
+      return res.status(400).send({ message: "Products not Found" });
     }
 
     return res
